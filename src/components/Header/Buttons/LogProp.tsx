@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import LoginProp from './LoginProp'
+import LoginProp from './LoginModal'
 
 import Link from 'next/link';
 

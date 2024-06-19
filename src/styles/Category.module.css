@@ -1,0 +1,115 @@
+.category{
+    justify-content: center;
+    border: 1px solid black;
+    width: 100vw;
+    display: flex;
+}
+
+.category > li{
+    position: relative;
+    margin-inline: 10%;
+    transition: background-color 0.65s;
+    padding: 0.5%;
+    border-radius: 10px;
+    margin-block: 0.25%;
+   
+}
+
+.category > li:hover{
+    background-color:#191970;
+    color: white;
+}
+
+.category > li > div{
+    border-radius: 10px;
+    color: black;
+    position: absolute;
+    top: 103%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.71);
+    height: 60vh;
+    width: 10vw;
+    transform: translateX(-10%);
+    flex-direction: column;
+    padding: 10%;
+}
+
+.category > li > div > div{
+    transition: all 0.5s;
+    padding: 5px;
+}
+
+.category > li > div > div:hover{
+    text-decoration: underline;
+    text-decoration-color: #191970;
+}
+
+.category > li > div > div > div{
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    height: 60vh;
+    flex-direction: column;
+    width: 20vw;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.364);
+    margin-block: 10%;
+}
+
+@media screen and (max-width:1000px) {
+    .category{
+        position: absolute;
+        top: 0%;
+        background-color: #2b9eb3;
+        width: 25%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: white;
+    }
+
+    .category > li{
+        margin-left: 10%;
+        transition: background-color 0.65s;
+        border-radius: 10px;
+        margin-block: 0.25%;
+       
+    }
+    
+    .category > li:hover{
+        background-color:#191970;
+        color: white;
+    }
+
+    .category > li > div{
+        border-radius: 10px;
+        color: black;
+        position: absolute;
+        top: 0%;
+        left: 110%;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.71);
+        height: 60vh;
+        width: 35vw;
+        flex-direction: column;
+        padding: 10%;
+        background-color: #2b9eb3;
+    }
+
+    .category > li > div > div{
+        transition: all 0.5s;
+        padding: 5px;
+        color: white;
+    }
+
+    .category > li > div > div > div{
+        border-radius: 10px;
+        position: absolute;
+        left: 99%;
+        top: 0%;
+        height: 60vh;
+        flex-direction: column;
+        width: 35vw;
+        box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.364);
+        background-color: #2b9eb3;
+        color: white;
+    }
+
+}

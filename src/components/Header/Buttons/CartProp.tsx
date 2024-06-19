@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react"
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import CartItem from "./CartItem";
+import CartItem from "./ItemCart";
 import { iCartItem } from "@/types/item";
 
 interface VisibilityProps {

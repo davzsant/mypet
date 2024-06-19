@@ -6,16 +6,21 @@
 *{
   font-family: "Poppins", sans-serif;
 }
+
+.logoImage{
+  width: 100px;
+  height: 100px;
+}
+
 .searchInput{
   width: 60vh;
   padding: 5%;
   height: 7vh;
   border-radius: 60px;
-  font-size: 105%;
+  font-size: 90%;
   position: relative;
   outline: none;
 }
-
 
 .centerItem{
   top: 50%;
@@ -32,13 +37,6 @@
 
 .ulAlign > li:hover{
   color: #315CF5;
-}
-
-.props{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 10%;
 }
 
 .dinnamicButton{
@@ -64,6 +62,7 @@
   color: white;
   padding: 20%;
   background-color: #319AF5;
+  cursor: pointer;
 }
 
 .overFlow{
@@ -75,9 +74,20 @@
 }
 
 @media screen and (max-width:1000px) {
+  .logoImage{
+    height: 50px;
+    width: 50px;
+  }
+
   .searchInput{
     width: 45vw;
     font-size: 10px;
     height: 5vh;
+  }
+
+  .bigButton{
+    padding: 10%;
+    width: 45px;
+    height: 45px;
   }
 }
