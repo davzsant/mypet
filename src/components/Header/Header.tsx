@@ -28,14 +28,16 @@ export default function Header(){
     const [visibilityProps,setVisibilityProps] = useState<VisibilityProps>({ chat: false, log: false, cart: false})
 
     const handleVisibility = (propSelected:keyof VisibilityProps,value:boolean)=>{
-        setVisibilityProps(prevState =>({
-            ...prevState,
+        setVisibilityProps({
+            chat:false,
+            log:false,
+            cart:false,
             [propSelected]: value
-        }));
+        });
     }
     
     return(
-        <header className="flex justify-center items-center flex-col">
+        <header className="flex justify-center items-center flex-col header">
             <div className="flex justify-center items-center bg-mainColor py-1 space-x-4 w-[100%]">
                 <Image src={"/logo-mypet.jpg"} alt="Logo da empresa" className="logoImage rounded-full" width={120} height={120}/>
                 <SearchForm isMobile={isMobile}/>

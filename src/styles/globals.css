@@ -73,6 +73,16 @@
   max-height: 200px;
 }
 
+.home{
+  position: relative;
+  z-index: 5;
+}
+
+.header{
+  position: relative;
+  z-index: 10;
+}
+
 @media screen and (max-width:1000px) {
   .logoImage{
     height: 50px;

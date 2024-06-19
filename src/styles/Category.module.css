@@ -1,8 +1,10 @@
 .category{
+    display: flex;
     justify-content: center;
     border: 1px solid black;
     width: 100vw;
-    display: flex;
+    background-color: white;
+    z-index: 1;
 }
 
 .category > li{
@@ -11,47 +13,44 @@
     transition: background-color 0.65s;
     padding: 0.5%;
     border-radius: 10px;
-    margin-block: 0.25%;
-   
+    margin-block: 0.5% !important;
+    list-style: none !important;
+    border: none !important;
 }
 
+.category li{
+    border-bottom: 1px solid gray;
+    transition: all 0.5s;
+    padding: 0.5%;
+    margin-block: 6%;
+    background-color: white;
+    text-transform: capitalize;
+}
 .category > li:hover{
-    background-color:#191970;
+    background-color:#319AF5;
     color: white;
 }
 
-.category > li > div{
+.category ul{
+    z-index: 2;
     border-radius: 10px;
     color: black;
     position: absolute;
-    top: 103%;
+    top: 0%;
+    left: 100%;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.71);
     height: 60vh;
-    width: 10vw;
+    width: 12vw;
     transform: translateX(-10%);
     flex-direction: column;
-    padding: 10%;
+    padding: 15%;
+    background-color: white;
 }
 
-.category > li > div > div{
-    transition: all 0.5s;
-    padding: 5px;
-}
 
-.category > li > div > div:hover{
+.category li:hover{
     text-decoration: underline;
-    text-decoration-color: #191970;
-}
-
-.category > li > div > div > div{
-    position: absolute;
-    left: 100%;
-    top: 0%;
-    height: 60vh;
-    flex-direction: column;
-    width: 20vw;
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.364);
-    margin-block: 10%;
+    text-decoration-color: #319AF5;
 }
 
 @media screen and (max-width:1000px) {
@@ -66,50 +65,19 @@
         color: white;
     }
 
-    .category > li{
+    .category  li{
         margin-left: 10%;
         transition: background-color 0.65s;
-        border-radius: 10px;
-        margin-block: 0.25%;
-       
-    }
-    
-    .category > li:hover{
-        background-color:#191970;
         color: white;
-    }
-
-    .category > li > div{
-        border-radius: 10px;
-        color: black;
-        position: absolute;
-        top: 0%;
-        left: 110%;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.71);
-        height: 60vh;
-        width: 35vw;
-        flex-direction: column;
-        padding: 10%;
+        border-bottom: 2px solid black;
         background-color: #2b9eb3;
     }
 
-    .category > li > div > div{
-        transition: all 0.5s;
-        padding: 5px;
-        color: white;
-    }
-
-    .category > li > div > div > div{
-        border-radius: 10px;
+    .category  ul{
         position: absolute;
-        left: 99%;
-        top: 0%;
         height: 60vh;
-        flex-direction: column;
         width: 35vw;
-        box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.364);
         background-color: #2b9eb3;
-        color: white;
     }
 
 }

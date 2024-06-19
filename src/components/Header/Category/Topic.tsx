@@ -22,15 +22,17 @@ const Topic = (topic:iCategoryTopics,url:string) => {
       },200)
     }
   return (
-    <div
+    <li
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}>
       <Link href={"categorias/"+url+topic.url}>{topic.topic}</Link>
-      <div className={(visible?"flex":"hidden")}>
-          {topic.types.map(topicType=>(
-          <Link href={topicType.url}>{topicType.type}</Link>))}
-      </div>
-  </div>
+      <ul className={(visible?"flex":"hidden")}>
+          {topic.types.map((topicType,index)=>(
+          <li key={index}>
+            <Link href={topicType.url}>{topicType.type}</Link>
+          </li>))}
+      </ul>
+  </li>
   )
 }
 

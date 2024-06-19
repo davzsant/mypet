@@ -27,11 +27,11 @@ const Category:React.FC<iCatagory> = (category) => {
       onMouseLeave={handleMouseLeave}>
         <Link href={"categorias/"+category.url} >
         <p>{category.name}</p></Link>
-        <div className={!visible?"hidden":"flex"}>
-            {category.topics.map((topic)=>(
-                <Topic {...topic} url={category.url}/>
+        <ul className={!visible?"hidden":"flex"}>
+            {category.topics.map((topic,index)=>(
+                <Topic {...topic} key={index} url={category.url}/>
             ))}
-        </div>
+        </ul>
     </li>
   )
 }
