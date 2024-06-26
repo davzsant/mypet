@@ -4,11 +4,11 @@ import { useState } from "react"
 import Image from "next/image"
 
 /*Componentes*/
-import SearchForm from "./SearchForm"
+import SearchForm from "./SearchForm/SearchForm"
 import ChatProp from "./Buttons/ChatProp"
 import LogProp from "./Buttons/LogProp"
 import CartProp from "./Buttons/CartProp"
-import Categories from "./Category/Categories"
+import Categories from "./BottomMenu/Categories"
 
 /*React Icons */
 

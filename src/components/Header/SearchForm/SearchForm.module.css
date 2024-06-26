@@ -1,0 +1,21 @@
+.searchForm{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.searchForm > div > input{
+    padding: 2%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    outline: none;
+}
+
+.searchForm > div > span{
+    position: absolute;
+    top: -60%;
+    left: 5%;
+    font-size: 12px;
+    font-weight: bold;
+    text-wrap: nowrap;
+}

@@ -1,0 +1,18 @@
+.carrosel{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.carrosel > img{
+    height: 39vh;
+    width: 60vw;
+    margin-inline: auto;
+    top: 50%;
+}
+
+.home{
+    width: 100%;
+}

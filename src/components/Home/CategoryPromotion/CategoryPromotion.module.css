@@ -1,0 +1,36 @@
+.promotion{
+    border-top: 1px solid #315CF5;
+}
+
+.promotion > p{
+    text-align: center;
+    font-size: 30px;
+    transform: translateY(-50%);
+    position: relative;
+    background-color: white;
+    width: 15%;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.promotion > div{
+    display: flex;
+    height: 50vh;
+    background-color: #3e97fc;
+    border-radius: 10px;
+}
+
+.promotion > div *{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1000px) {
+    .promotion img{
+        width: 20vh;
+        height: 20vh;
+    }
+}

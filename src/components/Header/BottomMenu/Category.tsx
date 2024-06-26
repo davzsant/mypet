@@ -25,11 +25,11 @@ const Category:React.FC<iCatagory> = (category) => {
       <li
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}>
-        <Link href={"categorias/"+category.url} >
+        <Link href={category.url} >
         <p>{category.name}</p></Link>
         <ul className={!visible?"hidden":"flex"}>
             {category.topics.map((topic,index)=>(
-                <Topic {...topic} key={index} url={category.url}/>
+                <Topic {...topic} key={index}/>
             ))}
         </ul>
     </li>

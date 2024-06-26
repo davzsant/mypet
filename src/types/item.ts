@@ -22,3 +22,26 @@ export interface iCatagory{
     icon:string;
     topics:iCategoryTopics[];
 }
+
+export interface  iImagesCarrosel{
+    imgPath:string,
+    link:string,
+    alt?:string
+}
+
+export interface iPromotion{
+    link:string;
+    image:string;
+    desc:string;
+    produtoID:number
+}
+
+export interface iPromotionProps{
+    animal:string;
+    mainPromotion:iPromotion;
+    secondPromotion:iPromotion;
+    thirdPromotion:iPromotion;
+    fourtyPromotion:iPromotion;
+    fiftyPromotion:iPromotion;
+}
+
